@@ -1,0 +1,210 @@
+<mxfile host="app.diagrams.net" modified="2025-09-05T11:43:22.115Z" agent="5.0" etag="draw.io" version="24.7.17">
+  <diagram name="AWS System Architecture" id="aws-q-screen-automation">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- User Layer -->
+        <mxCell id="user-layer" value="User Interface Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1080" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="voice-input" value="🎤 Voice Input&#xa;(Speech Framework)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="q-cli" value="🤖 Amazon Q CLI&#xa;Core Orchestrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="text-commands" value="⌨️ Text Commands&#xa;(CLI Interface)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="920" y="60" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- MCP Layer -->
+        <mxCell id="mcp-layer" value="MCP Server Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="1080" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="screen-analysis-mcp" value="📸 Screen Analysis MCP&#xa;• Screenshot Capture&#xa;• UI Element Detection&#xa;• Text Extraction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="action-execution-mcp" value="⚡ Action Execution MCP&#xa;• Click/Type/Scroll&#xa;• Keyboard Shortcuts&#xa;• App Control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ai-planning-mcp" value="🧠 AI Planning MCP&#xa;• Workflow Planning&#xa;• Context Analysis&#xa;• Error Recovery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="480" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="app-specific-mcps" value="📱 App-Specific MCPs&#xa;• Gmail MCP&#xa;• Slack MCP&#xa;• Excel MCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="680" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="aws-integration-mcp" value="☁️ AWS Integration MCP&#xa;• Service Coordination&#xa;• API Management&#xa;• Resource Control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="880" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- AWS Services Layer -->
+        <mxCell id="aws-layer" value="AWS Services Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="1080" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rekognition" value="👁️ Amazon Rekognition&#xa;• Text Detection (OCR)&#xa;• Object Recognition&#xa;• UI Element Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9999;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bedrock" value="🤖 Amazon Bedrock&#xa;• Claude Vision Model&#xa;• Screen Understanding&#xa;• Workflow Planning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9999;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="textract" value="📄 Amazon Textract&#xa;• Document Analysis&#xa;• Table Extraction&#xa;• Form Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9999;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lambda" value="⚡ AWS Lambda&#xa;• Serverless Execution&#xa;• Event Processing&#xa;• Workflow Orchestration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9999;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="🗄️ Amazon S3&#xa;• Screenshot Storage&#xa;• Workflow Templates&#xa;• User Configurations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9999;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="880" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- macOS Layer -->
+        <mxCell id="macos-layer" value="macOS Integration Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="1080" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="accessibility-api" value="♿ Accessibility API&#xa;• UI Element Access&#xa;• App State Reading&#xa;• Native Interactions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="iokit" value="⚙️ IOKit Framework&#xa;• Hardware Control&#xa;• Mouse/Keyboard&#xa;• System Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="280" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="core-graphics" value="🖼️ Core Graphics&#xa;• Screen Capture&#xa;• Image Processing&#xa;• Pixel Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="vision-framework" value="👀 Vision Framework&#xa;• Local ML Processing&#xa;• Real-time Analysis&#xa;• Object Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="680" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="applescript" value="📜 AppleScript&#xa;• App Automation&#xa;• System Integration&#xa;• Legacy Support" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="880" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Target Applications -->
+        <mxCell id="apps-layer" value="Target Applications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6ffe6;strokeColor=#00cc00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="1080" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gmail" value="📧 Gmail&#xa;Web Interface" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="slack" value="💬 Slack&#xa;Desktop App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="260" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="excel" value="📊 Excel&#xa;Microsoft Office" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="400" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="calendar" value="📅 Calendar&#xa;macOS Native" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="540" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="browser" value="🌐 Web Browser&#xa;Safari/Chrome" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="680" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="any-app" value="🔧 Any macOS App&#xa;Universal Support" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3ffb3;strokeColor=#00cc00;" vertex="1" parent="1">
+          <mxGeometry x="820" y="670" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections -->
+        <!-- Voice to Q CLI -->
+        <mxCell id="voice-to-q" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="voice-input" target="q-cli">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Text to Q CLI -->
+        <mxCell id="text-to-q" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="text-commands" target="q-cli">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Q CLI to MCP Servers -->
+        <mxCell id="q-to-screen-mcp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="q-cli" target="screen-analysis-mcp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="q-to-action-mcp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="q-cli" target="action-execution-mcp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="q-to-ai-mcp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="q-cli" target="ai-planning-mcp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- MCP to AWS Services -->
+        <mxCell id="screen-to-rekognition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="screen-analysis-mcp" target="rekognition">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ai-to-bedrock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-planning-mcp" target="bedrock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- MCP to macOS APIs -->
+        <mxCell id="action-to-accessibility" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="action-execution-mcp" target="accessibility-api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="300" />
+              <mxPoint x="160" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="action-to-iokit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="action-execution-mcp" target="iokit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- macOS APIs to Apps -->
+        <mxCell id="accessibility-to-apps" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="accessibility-api" target="gmail">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="620" />
+              <mxPoint x="170" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Data Flow Labels -->
+        <mxCell id="data-flow-1" value="Voice Commands" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-flow-2" value="MCP Protocol" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="520" y="130" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-flow-3" value="AWS API Calls" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-flow-4" value="System APIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-flow-5" value="UI Automation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
