@@ -1,0 +1,109 @@
+{
+  "name": "amazonq-screen-automation",
+  "version": "1.0.0",
+  "description": "Amazon Q Screen Automation - AI-powered Mac automation",
+  "main": "dist/electron/main.js",
+  "homepage": "https://github.com/team23-aws-hackathon",
+  "author": {
+    "name": "Team23",
+    "email": "team23@example.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js",
+    "electron": "npm run build && electron dist/electron/main.js",
+    "electron:dev": "npm run build && electron dist/electron/main.js --dev",
+    "test": "npm run build && node test_complete.js",
+    "test:perfect": "npm run build && node test_perfect_accuracy.js",
+    "clean": "rm -rf dist",
+    "pack": "npm run build && electron-builder --dir",
+    "dist": "npm run build && electron-builder",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "publish": "npm run build && electron-builder --publish=always"
+  },
+  "keywords": [
+    "aws",
+    "mcp",
+    "ai",
+    "automation",
+    "native",
+    "macos",
+    "amazonq",
+    "screen-automation"
+  ],
+  "build": {
+    "appId": "com.team23.amazonq-screen-automation",
+    "productName": "Amazon Q Screen Automation",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "config/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "entitlements": "assets/entitlements.mac.plist",
+      "entitlementsInherit": "assets/entitlements.mac.plist",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false
+    },
+    "dmg": {
+      "title": "Amazon Q Screen Automation",
+      "icon": "assets/icon.icns",
+      "background": "assets/dmg-background.png",
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "team23-aws-hackathon",
+        "repo": "amazonq-screen-automation"
+      }
+    ],
+    "afterSign": "scripts/notarize.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3",
+    "electron-notarize": "^1.2.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "electron-updater": "^6.0.0",
+    "node-machine-id": "^1.1.12"
+  }
+}

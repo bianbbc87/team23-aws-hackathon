@@ -1,0 +1,60 @@
+{
+  "profile": "amazonq",
+  "region": "us-east-1",
+  "account": "891377073140",
+  "services": {
+    "bedrock": {
+      "modelId": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "maxTokens": 4000,
+      "temperature": 0.1,
+      "enabled": true
+    },
+    "rekognition": {
+      "minConfidence": 80,
+      "maxLabels": 20,
+      "enabled": true
+    },
+    "textract": {
+      "featureTypes": ["TABLES", "FORMS", "LAYOUT"],
+      "enabled": true
+    },
+    "polly": {
+      "voiceId": "Joanna",
+      "outputFormat": "mp3",
+      "engine": "neural",
+      "enabled": true
+    },
+    "transcribe": {
+      "languageCode": "ko-KR",
+      "mediaFormat": "wav",
+      "enabled": true
+    },
+    "s3": {
+      "bucket": "amazonq-screen-automation-hackathon",
+      "region": "us-east-1",
+      "enabled": true
+    },
+    "dynamodb": {
+      "userTable": "AmazonQ-Users-Hackathon",
+      "sessionTable": "AmazonQ-Sessions-Hackathon", 
+      "analyticsTable": "AmazonQ-Analytics-Hackathon",
+      "enabled": true
+    },
+    "cloudwatch": {
+      "logGroup": "/aws/amazonq/screen-automation-hackathon",
+      "metricsNamespace": "AmazonQ/ScreenAutomation",
+      "enabled": true
+    }
+  },
+  "limits": {
+    "maxRequestsPerMinute": 100,
+    "maxTokensPerDay": 200000,
+    "maxUsersActive": 10
+  },
+  "realtime": {
+    "screenCapture": true,
+    "aiAnalysis": true,
+    "voiceRecognition": true,
+    "appAutomation": true
+  }
+}

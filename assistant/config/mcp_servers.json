@@ -1,0 +1,54 @@
+{
+  "servers": {
+    "screen_analysis": {
+      "config": {
+        "enabled": true,
+        "capture_method": "native"
+      }
+    },
+    "action_execution": {
+      "config": {
+        "enabled": true,
+        "automation_engine": "applescript"
+      }
+    },
+    "ai_planning": {
+      "config": {
+        "enabled": true,
+        "model": "claude-3.5-sonnet",
+        "aws_profile": "amazonq"
+      }
+    },
+    "kakaotalk": {
+      "config": {
+        "enabled": true,
+        "app_path": "/Applications/KakaoTalk.app"
+      }
+    },
+    "slack": {
+      "config": {
+        "enabled": true,
+        "api_token": "xoxb-your-token"
+      }
+    },
+    "gmail": {
+      "config": {
+        "enabled": true,
+        "api_credentials": "path/to/credentials.json"
+      }
+    },
+    "aws_integration": {
+      "config": {
+        "enabled": true,
+        "profile": "amazonq",
+        "region": "us-east-1"
+      }
+    },
+    "workflow": {
+      "config": {
+        "enabled": true,
+        "max_steps": 10
+      }
+    }
+  }
+}
