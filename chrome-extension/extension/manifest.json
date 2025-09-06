@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "AssistantQ",
+  "version": "1.0.0",
+  "description": "AI-powered productivity assistant for smart content generation with 4 core features",
+  
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["assistantq-character.png"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AssistantQ - AI Assistant",
+    "default_icon": {
+      "16": "assistantq-character.png",
+      "48": "assistantq-character.png",
+      "128": "assistantq-character.png"
+    }
+  },
+  
+  "icons": {
+    "16": "assistantq-character.png",
+    "48": "assistantq-character.png",
+    "128": "assistantq-character.png"
+  },
+  
+  "host_permissions": [
+    "https://*.execute-api.us-east-1.amazonaws.com/*"
+  ]
+}

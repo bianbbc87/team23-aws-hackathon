@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: 'Google Sans', sans-serif;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #5f6368;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-btn {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s;
+        }
+        
+        .feature-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .summary { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .email { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .idea { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; }
+        .report { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        
+        .status {
+            text-align: center;
+            padding: 10px;
+            background: #f0f4ff;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .info {
+            font-size: 11px;
+            color: #5f6368;
+            text-align: center;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="assistantq-character.png" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 3px; border-radius: 50%; object-fit: cover;">
+            AssistantQ
+        </div>
+        <div class="subtitle">AI-Powered Productivity Assistant</div>
+    </div>
+    
+    <div class="feature-grid">
+        <button class="feature-btn summary">📄 페이지 요약</button>
+        <button class="feature-btn email">📧 이메일 작성</button>
+        <button class="feature-btn idea">💡 아이디어 생성</button>
+        <button class="feature-btn report">📊 보고서 작성</button>
+    </div>
+    
+    <div class="status" id="status">AssistantQ 준비됨</div>
+    
+    <div class="info">
+        웹페이지에서 <img src="assistantq-character.png" style="width: 14px; height: 14px; vertical-align: middle; border-radius: 50%; object-fit: cover;"> 버튼을 클릭하여<br>
+        AssistantQ AI 어시스턴트를 사용하세요!
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
