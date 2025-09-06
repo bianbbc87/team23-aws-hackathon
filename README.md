@@ -2,11 +2,26 @@
 
 **AssistantQ**는 Amazon Q Developer와 AWS AI 서비스를 활용하여 웹 브라우징 경험을 혁신적으로 향상시키는 Chrome 확장 프로그램입니다. 복잡한 AI 기술을 간단한 원클릭 인터페이스로 제공하여, 누구나 쉽게 AI의 강력한 기능을 일상 업무에 활용할 수 있도록 설계되었습니다.
 
+<img width="485" height="414" alt="Image" src="https://github.com/user-attachments/assets/269b41a4-004f-44db-87cf-65745841bcb9" />
+
+
 ## 어플리케이션 개요
 
 AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트로, 페이지 내용을 자동으로 분석하고 사용자가 원하는 형태로 가공해주는 생산성 도구입니다. Amazon Bedrock의 최신 Nova Micro v1.0 모델을 활용하여 높은 품질의 AI 응답을 제공하며, 직관적인 UI/UX로 누구나 쉽게 사용할 수 있습니다.
 
 이 도구는 일상적인 웹 브라우징 중 발생하는 다양한 작업들 - 긴 글 요약, 이메일 작성, 아이디어 발굴, 보고서 작성 등을 AI가 자동으로 처리해주어 사용자의 생산성을 극대화합니다. 특히 Amazon Q Developer의 철학을 계승하여 개발자뿐만 아니라 일반 사용자도 AI의 혜택을 누릴 수 있도록 설계되었습니다.
+
+## UserFlow
+
+#### QAssistant Basic View
+<img width="1503" height="700" alt="Image" src="https://github.com/user-attachments/assets/28a0ec23-2286-4d6a-bed5-a4d41dd28288" />
+
+#### [Q Developer 사이트](https://hackathon.qdeveloper.site) 참고하여 아이디어를 만드는 예시
+<img width="1496" height="708" alt="Image" src="https://github.com/user-attachments/assets/b078a16e-202f-40b3-9f44-19acda05f7ca" />
+
+#### AssistantQ가 현재 페이지의 HTML을 스마트하게 추출하여 4가지 각각의 목적에 맞게 핵심 콘텐츠만 선별하여 Context로 Bedrock에 전달
+<img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/9ed9c383-610a-4793-bad8-c623c1ef40ca" />
+
 
 ## 주요 기능
 
@@ -28,7 +43,9 @@ AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트�
 
 **실시간 처리**: Amazon Bedrock의 강력한 성능으로 5초 이내에 고품질 AI 응답을 제공합니다.
 
-## 아키텍처
+## Architecture
+
+<img width="716" height="348" alt="Image" src="https://github.com/user-attachments/assets/11119194-ae2b-4ccb-b6d2-f53a911af486" />
 
 ### 🏗️ 시스템 구성도
 
