@@ -4,7 +4,6 @@
 
 <img width="485" height="414" alt="Image" src="https://github.com/user-attachments/assets/269b41a4-004f-44db-87cf-65745841bcb9" />
 
-
 ## 어플리케이션 개요
 
 AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트로, 페이지 내용을 자동으로 분석하고 사용자가 원하는 형태로 가공해주는 생산성 도구입니다. Amazon Bedrock의 최신 Nova Micro v1.0 모델을 활용하여 높은 품질의 AI 응답을 제공하며, 직관적인 UI/UX로 누구나 쉽게 사용할 수 있습니다.
@@ -14,12 +13,15 @@ AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트�
 ## UserFlow
 
 #### QAssistant Basic View
+
 <img width="1503" height="700" alt="Image" src="https://github.com/user-attachments/assets/28a0ec23-2286-4d6a-bed5-a4d41dd28288" />
 
 #### [Q Developer 사이트](https://hackathon.qdeveloper.site) 참고하여 아이디어를 만드는 예시
+
 <img width="1496" height="708" alt="Image" src="https://github.com/user-attachments/assets/b078a16e-202f-40b3-9f44-19acda05f7ca" />
 
 #### AssistantQ가 현재 페이지의 HTML을 스마트하게 추출하여 4가지 각각의 목적에 맞게 핵심 콘텐츠만 선별하여 Context로 Bedrock에 전달
+
 <img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/9ed9c383-610a-4793-bad8-c623c1ef40ca" />
 
 <br />
@@ -34,7 +36,6 @@ https://youtu.be/Q3SJdg2QIpQ
 **📄 스마트 페이지 요약**: 웹페이지의 핵심 내용을 자동으로 추출하고 간결하게 요약합니다. 긴 기사, 블로그 포스트, 논문 등을 빠르게 파악할 수 있어 정보 처리 시간을 대폭 단축시킵니다.
 
 <img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/f0285bee-11f6-4faf-ad60-5c2d49144322" />
-
 
 <br />
 <br />
@@ -52,7 +53,6 @@ https://youtu.be/Q3SJdg2QIpQ
 
 <br />
 <br />
-
 
 **📊 체계적인 보고서 작성**: 수집된 정보를 구조화된 보고서 형태로 자동 변환합니다. 회의 자료, 분석 보고서, 프레젠테이션 초안 작성에 유용합니다.
 
@@ -129,7 +129,6 @@ cdk deploy
 # 4. AssistantQ-v1.0.0.zip 압축 해제 후 폴더 선택
 ```
 
-
 ### 4. 배포 완료 확인
 
 배포 완료 후 다음 정보들이 출력됩니다:
@@ -196,24 +195,25 @@ cdk destroy
 
 ---
 
-**AssistantQ**는 Amazon Q Developer의 철학을 계승하여 AI의 강력한 기능을 모든 사용자가 쉽게 활용할 수 있도록 하는 혁신적인 생산성 도구입니다. 🚀🤖
+**AssistantQ**는 Amazon Q Developer의 철학을 계승하여 AI의 강력한 기능을 모든 사용자가 쉽게 활용할 수 있도록 하는 혁신적인 생산성 도구입니다. 🚀
 
 ### Architecture
+
 - Developed By Amazon Q
-
-
 
 ## About
 
 This repository contains AssistantQ, a Chrome extension built for Amazon Q Hackathon that demonstrates innovative use of AWS AI services for productivity enhancement.
 
 ### Resources
+
 - Chrome Web Store: Coming Soon
 - Demo Video: [링크 추가 예정]
 - Architecture Diagrams: Included in repository
 
 ### Languages
+
 - TypeScript: 45.2%
-- JavaScript: 32.1% 
+- JavaScript: 32.1%
 - Python: 15.3%
 - HTML/CSS: 7.4%
