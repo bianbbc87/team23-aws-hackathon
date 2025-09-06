@@ -1,6 +1,6 @@
 # 🤖 AssistantQ : AI-Powered Productivity Assistant Q
 
-**AssistantQ**는 Amazon Q Developer와 AWS AI 서비스를 활용하여 웹 브라우징 경험을 혁신적으로 향상시키는 Chrome 확장 프로그램입니다. 복잡한 AI 기술을 간단한 원클릭 인터페이스로 제공하여, 누구나 쉽게 AI의 강력한 기능을 일상 업무에 활용할 수 있도록 설계되었습니다.
+**AssistantQ**는 Amazon Q Developer와 AWS AI 서비스를 활용하여 웹 브라우징 경험을 혁신적으로 향상시키는 Chrome 확장 프로그램입니다. 복잡한 AI 기술을 간단한 원클릭 인터페이스로 제공하여, 누구나 쉽게 AI의 강력한 기능을 일상 업무에 활용할 수 있도록 설계되었습니다
 
 <img width="485" height="414" alt="Image" src="https://github.com/user-attachments/assets/269b41a4-004f-44db-87cf-65745841bcb9" />
 
