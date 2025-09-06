@@ -22,6 +22,8 @@ AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트�
 #### AssistantQ가 현재 페이지의 HTML을 스마트하게 추출하여 4가지 각각의 목적에 맞게 핵심 콘텐츠만 선별하여 Context로 Bedrock에 전달
 <img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/9ed9c383-610a-4793-bad8-c623c1ef40ca" />
 
+<br />
+<br />
 
 ## 주요 기능
 
@@ -29,11 +31,33 @@ AssistantQ는 웹페이지에서 바로 사용할 수 있는 AI 어시스턴트�
 
 **📄 스마트 페이지 요약**: 웹페이지의 핵심 내용을 자동으로 추출하고 간결하게 요약합니다. 긴 기사, 블로그 포스트, 논문 등을 빠르게 파악할 수 있어 정보 처리 시간을 대폭 단축시킵니다.
 
+<img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/f0285bee-11f6-4faf-ad60-5c2d49144322" />
+
+
+<br />
+<br />
+
 **📧 전문적인 이메일 작성**: 페이지 내용을 바탕으로 상황에 맞는 전문적인 이메일을 자동 생성합니다. 비즈니스 커뮤니케이션부터 개인적인 연락까지 다양한 톤앤매너로 작성 가능합니다.
+
+<img width="1504" height="839" alt="Image" src="" />
+
+<br />
+<br />
 
 **💡 창의적 아이디어 생성**: 현재 보고 있는 콘텐츠에서 영감을 받아 관련된 창의적 아이디어를 제안합니다. 브레인스토밍, 기획, 마케팅 아이디어 발굴에 활용할 수 있습니다.
 
+<img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/cb51154b-ab8b-407f-8d71-901ab92c3902" />
+
+<br />
+<br />
+
+
 **📊 체계적인 보고서 작성**: 수집된 정보를 구조화된 보고서 형태로 자동 변환합니다. 회의 자료, 분석 보고서, 프레젠테이션 초안 작성에 유용합니다.
+
+<img width="1504" height="839" alt="Image" src="https://github.com/user-attachments/assets/76435a1b-995f-46b1-acfd-e4584712dc6d" />
+
+<br />
+<br />
 
 ### 🚀 혁신적인 사용자 경험
 
