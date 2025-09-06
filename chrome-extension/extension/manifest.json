@@ -5,12 +5,24 @@
   "description": "AI-powered productivity assistant for smart content generation with 4 core features",
   
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting"
   ],
   
   "content_scripts": [
     {
-      "matches": ["https://*/*", "http://*/*"],
+      "matches": [
+        "https://news.ycombinator.com/*",
+        "https://medium.com/*",
+        "https://dev.to/*",
+        "https://stackoverflow.com/*",
+        "https://github.com/*",
+        "https://docs.aws.amazon.com/*",
+        "https://www.nytimes.com/*",
+        "https://techcrunch.com/*",
+        "https://www.reddit.com/*",
+        "https://en.wikipedia.org/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_end"
     }
@@ -19,7 +31,18 @@
   "web_accessible_resources": [
     {
       "resources": ["assistantq-character.png"],
-      "matches": ["https://*/*", "http://*/*"]
+      "matches": [
+        "https://news.ycombinator.com/*",
+        "https://medium.com/*",
+        "https://dev.to/*",
+        "https://stackoverflow.com/*",
+        "https://github.com/*",
+        "https://docs.aws.amazon.com/*",
+        "https://www.nytimes.com/*",
+        "https://techcrunch.com/*",
+        "https://www.reddit.com/*",
+        "https://en.wikipedia.org/*"
+      ]
     }
   ],
   
